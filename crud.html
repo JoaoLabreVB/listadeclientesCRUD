@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="addtable.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lista de clientes</h1>
+        <p>Feito por Jabra &reg;</p>
+    </header>
+    <section>
+        <form method="POST" id="form">
+        <input class="input-text" type="text" placeholder="Nome" id="nome" required>
+        <input class="input-text" type="text" placeholder="Email" id="email" required>
+        <input class="input-text" type="text" placeholder="Telefone" id="tel" required>
+        <input class="input-button" type="submit" value="Adicionar" onclick= "return additem()">
+    </form>
+    </section>
+    <table id="tabela">
+        <tr id="0">
+           <th>ID</th>
+           <th>NOME</th> 
+           <th>EMAIL</th> 
+           <th>TELEFONE</th>
+        </tr>
+    </table>
+</body>
+</html>
